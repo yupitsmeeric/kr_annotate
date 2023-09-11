@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>한 페이지가 될 수 있게</title>
+    <style>
+        body {
+            background-color: #f5e5d9; /* Sepia background color */
+            font-size: 20px; /* Increase text size */
+            text-align: center; /* Center text horizontally */
+            color: #704214; /* Sepia text color */
+        }
+        table {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        th, td {
+            max-width: 450px;
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+        th {
+            background-color: #d7c9ad; /* Sepia header background color */
+        }
+        /* Tooltip container */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted gray; /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          opacity: 0;
+          min-width: 140px;
+          max-width: 1000px;
+          background-color: #2a2a2a;
+          color: #ddd;
+          text-align: center;
+          padding: 5px 0;
+          border-radius: 6px;
+         
+          /* Position the tooltip text - see examples below! */
+          position: absolute;
+          z-index: 1;
+          bottom: 2rem;
+          left:50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 0.18s ease;
+        }
+        
+        .tooltip:hover {
+          background-color: #556b2f;
+          color: #dddddd;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+<p>Time of Our Life / <span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지가</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>될</span> <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있게</span> – DAY6</p>
+<p><span class="tooltip"><span class="tooltiptext">솔직히; frankly,candidly; 率直히</span>솔직히</span> <span class="tooltip"><span class="tooltiptext">말하다; Speak</span>말할게</span><br>正直に言うよ</p>
+<p><span class="tooltip"><span class="tooltiptext">많이; A lot</span>많이</span> <span class="tooltip"><span class="tooltiptext">기다리다; To wait</span>기다려</span> <span class="tooltip"><span class="tooltiptext">오다; To come</span>왔어</span><br>めっちゃ待ってたんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">너; You</span>너도</span> 그랬을 <span class="tooltip"><span class="tooltiptext">거; That thing</span>거라</span> <span class="tooltip"><span class="tooltiptext">믿다; Believe</span>믿어</span><br>君もそうだって思うよ</p>
+<p><span class="tooltip"><span class="tooltiptext">오늘; Today</span>오늘이</span> <span class="tooltip"><span class="tooltiptext">오다; To come</span>오길</span><br>今日が来るまで</p>
+<p><span class="tooltip"><span class="tooltiptext">매일; Every day; 每日</span>매일같이</span> <span class="tooltip"><span class="tooltiptext">달력; A calendar; 달曆</span>달력을</span> <span class="tooltip"><span class="tooltiptext">보다; To see</span>보면서</span><br>毎日のようにカレンダーを見ながらさ</p>
+<p><span class="tooltip"><span class="tooltiptext">솔직히; frankly,candidly; 率直히</span>솔직히</span> <span class="tooltip"><span class="tooltiptext">나; Me</span>나에게도</span><br>正直僕にも</p>
+<p><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> <span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간은</span><br>今この瞬間は</p>
+<p><span class="tooltip"><span class="tooltiptext">꿈; A Dream</span>꿈만</span> <span class="tooltip"><span class="tooltiptext">같다; To be similar</span>같아</span> 너와 <span class="tooltip"><span class="tooltiptext">함께; Together, with</span>함께라</span><br>夢みたいだ 君と一緒だから</p>
+<p><span class="tooltip"><span class="tooltiptext">오늘; Today</span>오늘을</span> <span class="tooltip"><span class="tooltiptext">위하다; To do for the sake of; 爲하다</span>위해</span><br>今日のために</p>
+<p><span class="tooltip"><span class="tooltiptext">꾀다; allure, entice, inveigle, temp...</span>꽤</span> <span class="tooltip"><span class="tooltiptext">많다; many,much</span>많은</span> 걸 <span class="tooltip"><span class="tooltiptext">준비; Preparation; 準備</span>준비해</span> <span class="tooltip"><span class="tooltiptext">보다; To see</span>봤어</span><br>すごいたくさん準備したんだ</p>
+<p> </p>
+<p>All about you and I<br>君と僕だけ</p>
+<p>다른 <span class="tooltip"><span class="tooltiptext">건; sth presented as a problem; 件</span>건</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span> <span class="tooltip"><span class="tooltiptext">제치다; to croquet an opponent`s ball ...</span>제쳐</span> 두고<br>他のことは全部ほっておいて</p>
+<p>Now come with me<br>僕と一緒に来てよ</p>
+<p>Take my hand<br>手を取って</p>
+<p> </p>
+<p><span class="tooltip"><span class="tooltiptext">아름답다; To be beautiful</span>아름다운</span> <span class="tooltip"><span class="tooltiptext">청춘; youth,the springtime of life; 靑春</span>청춘의</span> <span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">장; a counter for paper or other t...; 橦</span>장</span><br>美しい青春の一ページに</p>
+<p><span class="tooltip"><span class="tooltiptext">함께; Together, with</span>함께</span> 써내려 <span class="tooltip"><span class="tooltiptext">가자; Gaza</span>가자</span><br>一緒に書いて進もう</p>
+<p>너와의 <span class="tooltip"><span class="tooltiptext">추억; Memory; 追憶</span>추억들로</span><br>君との思い出で</p>
+<p><span class="tooltip"><span class="tooltiptext">가득; Full</span>가득</span> <span class="tooltip"><span class="tooltiptext">채우다; to carry (a pager) on the hip</span>채울래</span> (Come on!)<br>いっぱいにしてさ</p>
+<p><span class="tooltip"><span class="tooltiptext">아물다; to close a wound, heal a wound</span>아무</span> <span class="tooltip"><span class="tooltiptext">걱정; Worry</span>걱정도</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하지는</span> <span class="tooltip"><span class="tooltiptext">마; yam, a yard of fabric</span>마</span><br>何も心配しなくていいんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">나; Me</span>나에게</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span> <span class="tooltip"><span class="tooltiptext">맡기다; Entrust sb with sth</span>맡겨</span> <span class="tooltip"><span class="tooltiptext">보다; To see</span>봐</span><br>僕に全部任せてよ</p>
+<p><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> <span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간이</span><br>今この瞬間が</p>
+<p><span class="tooltip"><span class="tooltiptext">다시; Again</span>다시</span> 넘겨볼 <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있는</span><br>まためくって見られる</p>
+<p><span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지가</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>될</span> <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있게</span><br>一ページにできるようにさ</p>
+<p> </p>
+<p>Hey!<br>Ee-yah oh oh<br>This is our page<br>僕らのページなんだ</p>
+<p>Hey!<br>Ee-yah Ee-yah oh oh<br>Our page</p>
+<p> </p>
+<p><br> </p>
+<p><span class="tooltip"><span class="tooltiptext">솔직히; frankly,candidly; 率直히</span>솔직히</span> <span class="tooltip"><span class="tooltiptext">말하다; Speak</span>말할게</span><br>正直に言うよ</p>
+<p><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금이</span> <span class="tooltip"><span class="tooltiptext">오기; cacography; 五伎,傲氣,誤記</span>오기까지</span><br>今にたどり着くまで</p>
+<p><span class="tooltip"><span class="tooltiptext">마냥; to the fullest, continuously</span>마냥</span> <span class="tooltip"><span class="tooltiptext">; 順坦</span>순탄하진</span> <span class="tooltip"><span class="tooltiptext">않다; To not be, to not do</span>않았지</span><br>ひたすら順調だったわけじゃないんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">오늘; Today</span>오늘이</span> <span class="tooltip"><span class="tooltiptext">오다; To come</span>오길</span><br>今日が来るのを</p>
+<p><span class="tooltip"><span class="tooltiptext">나돌다; to go outside and wander about</span>나도</span> <span class="tooltip"><span class="tooltiptext">목; The neck; the throat</span>목</span> <span class="tooltip"><span class="tooltiptext">빠지다; to become loose and fall off</span>빠져라</span> <span class="tooltip"><span class="tooltiptext">기다리다; To wait</span>기다렸어</span><br>僕も首を長くして待ってたんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">솔직히; frankly,candidly; 率直히</span>솔직히</span> <span class="tooltip"><span class="tooltiptext">나; Me</span>나보다도</span><br>正直僕よりも</p>
+<p><span class="tooltip"><span class="tooltiptext">네가; thou</span>네가</span> <span class="tooltip"><span class="tooltiptext">몇; A few</span>몇</span> <span class="tooltip"><span class="tooltiptext">배; two-times or generally how-man...</span>배는</span> <span class="tooltip"><span class="tooltiptext">더; More</span>더</span><br>君が何倍ももっと</p>
+<p><span class="tooltip"><span class="tooltiptext">힘들다; To be hard, difficult</span>힘들었을</span> <span class="tooltip"><span class="tooltiptext">거; That thing</span>거라고</span> <span class="tooltip"><span class="tooltiptext">믿다; Believe</span>믿어</span><br>辛かったと思うよ</p>
+<p><span class="tooltip"><span class="tooltiptext">오늘; Today</span>오늘을</span> <span class="tooltip"><span class="tooltiptext">위하다; To do for the sake of; 爲하다</span>위해</span><br>今日のために</p>
+<p><span class="tooltip"><span class="tooltiptext">그저; 1) still or  all the time  2) ...</span>그저</span> <span class="tooltip"><span class="tooltiptext">견디다; Endure or  bear</span>견뎌줘서</span> <span class="tooltip"><span class="tooltiptext">고맙다; To thank</span>고마워</span><br>ひたすら耐えてくれてありがとう</p>
+<p> </p>
+<p>All about you and I<br>君と僕だけ</p>
+<p>다른 <span class="tooltip"><span class="tooltiptext">건; sth presented as a problem; 件</span>건</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span> <span class="tooltip"><span class="tooltiptext">제치다; to croquet an opponent`s ball ...</span>제쳐</span> 두고<br>他のことは全部ほっておいて</p>
+<p>Now come with me<br>僕と一緒に来てよ</p>
+<p>Take my hand<br>手を取って</p>
+<p> </p>
+<p><span class="tooltip"><span class="tooltiptext">아름답다; To be beautiful</span>아름다운</span> <span class="tooltip"><span class="tooltiptext">청춘; youth,the springtime of life; 靑春</span>청춘의</span> <span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">장; a counter for paper or other t...; 橦</span>장</span><br>美しい青春の一ページに</p>
+<p><span class="tooltip"><span class="tooltiptext">함께; Together, with</span>함께</span> 써내려 <span class="tooltip"><span class="tooltiptext">가자; Gaza</span>가자</span><br>一緒に書いて進もう</p>
+<p>너와의 <span class="tooltip"><span class="tooltiptext">추억; Memory; 追憶</span>추억들로</span><br>君との思い出で</p>
+<p><span class="tooltip"><span class="tooltiptext">가득; Full</span>가득</span> <span class="tooltip"><span class="tooltiptext">채우다; to carry (a pager) on the hip</span>채울래</span> (Come on!)<br>いっぱいにしてさ</p>
+<p><span class="tooltip"><span class="tooltiptext">아물다; to close a wound, heal a wound</span>아무</span> <span class="tooltip"><span class="tooltiptext">걱정; Worry</span>걱정도</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하지는</span> <span class="tooltip"><span class="tooltiptext">마; yam, a yard of fabric</span>마</span><br>何も心配しなくていいんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">나; Me</span>나에게</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span> <span class="tooltip"><span class="tooltiptext">맡기다; Entrust sb with sth</span>맡겨</span> <span class="tooltip"><span class="tooltiptext">보다; To see</span>봐</span><br>僕に全部任せてよ</p>
+<p><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> <span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간이</span><br>今この瞬間が</p>
+<p><span class="tooltip"><span class="tooltiptext">다시; Again</span>다시</span> 넘겨볼 <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있는</span><br>まためくって見られる</p>
+<p><span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지가</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>될</span> <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있게</span><br>一ページにできるようにね</p>
+<p> </p>
+<p>Want you to come on out and have fun<br>君と一緒に楽しみたいんだ</p>
+<p>Want us to have the time of our life<br>最高の時間を楽しみたいんだ</p>
+<p> </p>
+<p>Oh, oh, oh, oh<br>Oh, oh, oh, oh</p>
+<p>너와의 <span class="tooltip"><span class="tooltiptext">추억; Memory; 追憶</span>추억들로</span><br>君との思い出で</p>
+<p><span class="tooltip"><span class="tooltiptext">가득; Full</span>가득</span> <span class="tooltip"><span class="tooltiptext">채우다; to carry (a pager) on the hip</span>채울래</span> (Come on!)<br>いっぱいにしてさ</p>
+<p><span class="tooltip"><span class="tooltiptext">아물다; to close a wound, heal a wound</span>아무</span> <span class="tooltip"><span class="tooltiptext">걱정; Worry</span>걱정도</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하지는</span> <span class="tooltip"><span class="tooltiptext">마; yam, a yard of fabric</span>마</span><br>何も心配しなくていいんだ</p>
+<p><span class="tooltip"><span class="tooltiptext">나; Me</span>나에게</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span> <span class="tooltip"><span class="tooltiptext">맡기다; Entrust sb with sth</span>맡겨</span> <span class="tooltip"><span class="tooltiptext">보다; To see</span>봐</span><br>僕に全部任せてよ</p>
+<p><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> <span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간이</span><br>今この瞬間を</p>
+<p><span class="tooltip"><span class="tooltiptext">다시; Again</span>다시</span> 넘겨볼 <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있는</span><br>まためくって見られる</p>
+<p><span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지가</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>될</span> <span class="tooltip"><span class="tooltiptext">수; way,method</span>수</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있게</span><br>一ページにできるようにね</p>
+<p> </p>
+<p>Hey!<br>Ee-yah oh oh<br>This is our page<br>僕らのページなんだ</p>
+<p>Hey!<br>Ee-yah Ee-yah oh oh<br>Our page</p><table><tr><th>단어</th><th>의미</th><th>漢字</th><th>빈도</th></tr>
+<tr><td>수</td><td>way,method</td><td>None</td><td>7</td></tr>
+<tr><td>있다</td><td>To be</td><td>None</td><td>7</td></tr>
+<tr><td>한</td><td>One, a single</td><td>None</td><td>6</td></tr>
+<tr><td>보다</td><td>To see</td><td>None</td><td>5</td></tr>
+<tr><td>나</td><td>Me</td><td>None</td><td>5</td></tr>
+<tr><td>지금</td><td>Now</td><td>只今</td><td>5</td></tr>
+<tr><td>다</td><td>All, everything</td><td>None</td><td>5</td></tr>
+<tr><td>페이지</td><td>page</td><td>None</td><td>4</td></tr>
+<tr><td>되다</td><td>to become, to come to be</td><td>None</td><td>4</td></tr>
+<tr><td>솔직히</td><td>frankly,candidly</td><td>率直히</td><td>4</td></tr>
+<tr><td>오다</td><td>To come</td><td>None</td><td>4</td></tr>
+<tr><td>오늘</td><td>Today</td><td>None</td><td>4</td></tr>
+<tr><td>이</td><td>Two</td><td>None</td><td>4</td></tr>
+<tr><td>순간</td><td>A moment,a second</td><td>瞬間</td><td>4</td></tr>
+<tr><td>것</td><td>A thing or  an object</td><td>None</td><td>3</td></tr>
+<tr><td>함께</td><td>Together, with</td><td>None</td><td>3</td></tr>
+<tr><td>추억</td><td>Memory</td><td>追憶</td><td>3</td></tr>
+<tr><td>로</td><td>rho</td><td>None</td><td>3</td></tr>
+<tr><td>가득</td><td>Full</td><td>None</td><td>3</td></tr>
+<tr><td>채우다</td><td>to carry (a pager) on the hip</td><td>None</td><td>3</td></tr>
+<tr><td>아무</td><td>anybody,everybody</td><td>None</td><td>3</td></tr>
+<tr><td>걱정</td><td>Worry</td><td>None</td><td>3</td></tr>
+<tr><td>하지</td><td>the legs, the lower body</td><td>下肢</td><td>3</td></tr>
+<tr><td>마</td><td>yam, a yard of fabric</td><td>None</td><td>3</td></tr>
+<tr><td>맡기다</td><td>Entrust sb with sth</td><td>None</td><td>3</td></tr>
+<tr><td>다시</td><td>Again</td><td>None</td><td>3</td></tr>
+<tr><td>말하다</td><td>Speak</td><td>None</td><td>2</td></tr>
+<tr><td>기다리다</td><td>To wait</td><td>None</td><td>2</td></tr>
+<tr><td>너</td><td>You</td><td>None</td><td>2</td></tr>
+<tr><td>거</td><td>That thing</td><td>None</td><td>2</td></tr>
+<tr><td>믿다</td><td>Believe</td><td>None</td><td>2</td></tr>
+<tr><td>라</td><td>la</td><td>None</td><td>2</td></tr>
+<tr><td>위하다</td><td>To do for the sake of</td><td>爲하다</td><td>2</td></tr>
+<tr><td>건</td><td>sth presented as a problem</td><td>件</td><td>2</td></tr>
+<tr><td>제치다</td><td>to croquet an opponent`s ball in another direction, take sth out of the way</td><td>None</td><td>2</td></tr>
+<tr><td>두다</td><td>place, put on, set</td><td>None</td><td>2</td></tr>
+<tr><td>아름답다</td><td>To be beautiful</td><td>None</td><td>2</td></tr>
+<tr><td>청춘</td><td>youth,the springtime of life</td><td>靑春</td><td>2</td></tr>
+<tr><td>장</td><td>a counter for paper or other thin objects</td><td>橦</td><td>2</td></tr>
+<tr><td>가다</td><td>To go</td><td>None</td><td>2</td></tr>
+<tr><td>많이</td><td>A lot</td><td>None</td><td>1</td></tr>
+<tr><td>매일</td><td>Every day</td><td>每日</td><td>1</td></tr>
+<tr><td>같이</td><td>Together</td><td>None</td><td>1</td></tr>
+<tr><td>달력</td><td>A calendar</td><td>달曆</td><td>1</td></tr>
+<tr><td>꿈</td><td>A Dream</td><td>None</td><td>1</td></tr>
+<tr><td>같다</td><td>To be similar</td><td>None</td><td>1</td></tr>
+<tr><td>꽤</td><td>Fairly or considerably</td><td>None</td><td>1</td></tr>
+<tr><td>많다</td><td>many,much</td><td>None</td><td>1</td></tr>
+<tr><td>준비</td><td>Preparation</td><td>準備</td><td>1</td></tr>
+<tr><td>마냥</td><td>to the fullest, continuously</td><td>None</td><td>1</td></tr>
+<tr><td>순탄</td><td>None</td><td>順坦</td><td>1</td></tr>
+<tr><td>않다</td><td>To not be, to not do</td><td>None</td><td>1</td></tr>
+<tr><td>목</td><td>The neck; the throat</td><td>None</td><td>1</td></tr>
+<tr><td>빠지다</td><td>to become loose and fall off</td><td>None</td><td>1</td></tr>
+<tr><td>네</td><td>Your</td><td>None</td><td>1</td></tr>
+<tr><td>몇</td><td>A few</td><td>None</td><td>1</td></tr>
+<tr><td>배</td><td>two-times or generally how-many-times</td><td>None</td><td>1</td></tr>
+<tr><td>더</td><td>More</td><td>None</td><td>1</td></tr>
+<tr><td>힘들다</td><td>To be hard, difficult</td><td>None</td><td>1</td></tr>
+<tr><td>그저</td><td>1) still or  all the time  2) easily or  with no effort</td><td>None</td><td>1</td></tr>
+<tr><td>견디다</td><td>Endure or  bear</td><td>None</td><td>1</td></tr>
+<tr><td>주다</td><td>To give, to do for a person</td><td>None</td><td>1</td></tr>
+<tr><td>고맙다</td><td>To thank</td><td>None</td><td>1</td></tr>
+</table>
+</body>
+</html>

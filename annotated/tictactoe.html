@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tictactoe</title>
+    <style>
+        body {
+            background-color: #f5e5d9; /* Sepia background color */
+            font-size: 20px; /* Increase text size */
+            text-align: center; /* Center text horizontally */
+            color: #704214; /* Sepia text color */
+        }
+        table {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        th, td {
+            max-width: 450px;
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+        th {
+            background-color: #d7c9ad; /* Sepia header background color */
+        }
+        /* Tooltip container */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted gray; /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          opacity: 0;
+          min-width: 140px;
+          max-width: 1000px;
+          background-color: #2a2a2a;
+          color: #ddd;
+          text-align: center;
+          padding: 5px 0;
+          border-radius: 6px;
+         
+          /* Position the tooltip text - see examples below! */
+          position: absolute;
+          z-index: 1;
+          bottom: 2rem;
+          left:50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 0.18s ease;
+        }
+        
+        .tooltip:hover {
+          background-color: #556b2f;
+          color: #dddddd;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+<p>Tic! Tac! Toe! Lyrics – <span class="tooltip"><span class="tooltiptext">탁; (1) With a bang, with a snap (...</span>탁</span> (TAK) & Corbin (NEWTYPE)</p>
+<p>Singer: <span class="tooltip"><span class="tooltiptext">탁; (1) With a bang, with a snap (...</span>탁</span> (TAK) & Corbin (NEWTYPE)<br>Title: Tic! Tac! Toe!</p>
+<p>Don’t stop it<br>Can’t stop it<br>Until it’s perfect<br><span class="tooltip"><span class="tooltiptext">다시; Again</span>다시</span> <span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">벌다; To earn (money) ; (2) to invit...</span>번</span> replay</p>
+<p>Don’t stop it (Oh)<br>Can’t stop it (Yeah)<br>Until it’s perfect<br>Play Tic Tac Toe</p>
+<p>Tic Tac<br>Because<br>Every little<br>Every moment</p>
+<p>Every now and then<br>너와 내가<br><span class="tooltip"><span class="tooltiptext">끊임없이; Constantly or unceasingly</span>끊임없이</span><br><span class="tooltip"><span class="tooltiptext">잇다; Join, connect</span>이어나간</span></p>
+<p>Every Now and then<br>You and Me<br>endlessly<br>Continued</p>
+<p><br><span class="tooltip"><span class="tooltiptext">다음; Next</span>다음</span> stage<br><span class="tooltip"><span class="tooltiptext">이다; to be (for persistent states)</span>이건</span> <span class="tooltip"><span class="tooltiptext">마치; As though, as if</span>마치</span> <span class="tooltip"><span class="tooltiptext">롤러; roller</span>롤러코스터</span><br><span class="tooltip"><span class="tooltiptext">아니다; To not be</span>아님</span> spaceship <span class="tooltip"><span class="tooltiptext">타다; to become dried up</span>타고서</span><br><span class="tooltip"><span class="tooltiptext">뫼; a mountain</span>뫼비우스</span> <span class="tooltip"><span class="tooltiptext">위; The stomach</span>위</span> (repeat)</p>
+<p>Next Stage<br>This is like a roller coaster<br>Or on spaceShip<br>Mobius (Repeat)</p>
+<p>On and on<br><span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> <span class="tooltip"><span class="tooltiptext">내다; to see through, to make it thr...</span>내게</span> <span class="tooltip"><span class="tooltiptext">느껴지다; Feel</span>느껴졌던</span> 떨림이<br><span class="tooltip"><span class="tooltiptext">혼자; Alone</span>혼자만의</span> <span class="tooltip"><span class="tooltiptext">것; A thing or  an object</span>것인지</span><br><span class="tooltip"><span class="tooltiptext">너; You</span>너도</span> <span class="tooltip"><span class="tooltiptext">같다; To be similar</span>같은지</span></p>
+<p>On and on<br>The trembling I felt by me now<br>Is it alone<br>You are the same</p>
+<p><br>I got to know right now<br><span class="tooltip"><span class="tooltiptext">늦다; To be late (time), to be overd...</span>늦기전에</span> <span class="tooltip"><span class="tooltiptext">말하다; Speak</span>말해줘</span><br><span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간</span> <span class="tooltip"><span class="tooltiptext">얼마나; How many, how much ;  very</span>얼마나</span> 내가 <span class="tooltip"><span class="tooltiptext">더; More</span>더</span><br><span class="tooltip"><span class="tooltiptext">기다리다; To wait</span>기다려야</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하는지</span></p>
+<p>I got to know right now<br>Tell me before late<br>How much more I am at this moment<br>Whether to wait</p>
+<p><br>Tic Tac Toe<br>We gon’ play game all night<br><span class="tooltip"><span class="tooltiptext">의미; meaning, purport, significance; 意味</span>의미없던</span> O and X<br><span class="tooltip"><span class="tooltiptext">정답; The right answer; 正答</span>정답은</span> <span class="tooltip"><span class="tooltiptext">이미; Already</span>이미</span> <span class="tooltip"><span class="tooltiptext">정해지다; To be determined, settled; 定해지다</span>정해져</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있는걸</span></p>
+<p>TIC TAC TOE<br>We Gon ’Play Game All Night<br>O and X<br>The correct answer is already set</p>
+<p><br>(With you)<br><span class="tooltip"><span class="tooltiptext">하나; 하나마나</span>하나씩</span> <span class="tooltip"><span class="tooltiptext">알다; To know</span>알게된</span><br><span class="tooltip"><span class="tooltiptext">마지막; Last, final</span>마지막</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지</span> <span class="tooltip"><span class="tooltiptext">결말; conclusion, ending, finality, ...; 結末</span>결말을</span> <span class="tooltip"><span class="tooltiptext">따르다; accompany, go with, follow som...</span>따라</span><br><span class="tooltip"><span class="tooltiptext">달려가다; to run, rush, dash forward</span>달려갔던</span> <span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span></p>
+<p>(With you)<br>I learned one by one<br>Follow the last page ending<br>You and me now</p>
+<p><br>No matter what they say now<br><span class="tooltip"><span class="tooltiptext">만나다; Meet</span>만나게</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>되는</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span><br>Tic Tac Toe<br>Tic Tac Toe</p>
+<p>No Matter What the Say Now<br>You and I<br>TIC TAC TOE<br>TIC TAC TOE</p>
+<p><br>Tic Tac Toe<br>We play this game all night<br>That Tic! Tac! Toe!<br><span class="tooltip"><span class="tooltiptext">지우다; Put a thing on a person's back</span>지워냈던</span> <span class="tooltip"><span class="tooltiptext">그림자; A shadow or  a sillheoute or  ...</span>그림자</span></p>
+<p>TIC TAC TOE<br>We play this game all night<br>That Tic! TAC! TOE!<br>The shadow that was erased</p>
+<p><br><span class="tooltip"><span class="tooltiptext">비우다; empty,vacate</span>비워냈던</span> <span class="tooltip"><span class="tooltiptext">배경; Background; 背景</span>배경</span> <span class="tooltip"><span class="tooltiptext">다; All, everything</span>다</span><br><span class="tooltip"><span class="tooltiptext">이제; Now</span>이제</span> 내가 <span class="tooltip"><span class="tooltiptext">그리다; Picture or  draw a picture</span>그려가</span><br>In-between you and I<br><span class="tooltip"><span class="tooltiptext">물음표; interrogation mark</span>물음표를</span> <span class="tooltip"><span class="tooltiptext">가리다; being potty-trained</span>가려</span> 난</p>
+<p>It’s the background that I empty<br>Now I draw<br>In-between you and i<br>I went to the water mark</p>
+<p><br><span class="tooltip"><span class="tooltiptext">느낌표; exclamation mark</span>느낌표로</span> <span class="tooltip"><span class="tooltiptext">채우다; to carry (a pager) on the hip</span>채워</span> <span class="tooltip"><span class="tooltiptext">널; paddle board</span>널</span><br>완벽히 <span class="tooltip"><span class="tooltiptext">널다; dry</span>넌</span> 내가 <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>되고</span><br>난 <span class="tooltip"><span class="tooltiptext">네가; thou</span>네가</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>돼</span><br>Like a mirror image</p>
+<p>Fill the exclamation mark<br>Totally you become me<br>I am you<br>Like a mirror Image</p>
+<p><br>I go left and you go right<br><span class="tooltip"><span class="tooltiptext">똑같다; to be the same</span>똑같은</span> <span class="tooltip"><span class="tooltiptext">모습; shape,body</span>모습과</span><br><span class="tooltip"><span class="tooltiptext">단지; an earthenware pot</span>단지</span> <span class="tooltip"><span class="tooltiptext">정반대; Direct opposition, the exact r...; 正反對</span>정반대</span> direction<br><span class="tooltip"><span class="tooltiptext">공존; concomitance, -tancy; 共存</span>공존하는걸</span></p>
+<p>I go left and you go right<br>With the same appearance<br>The opposite direct<br>Coexistence</p>
+<p><br>You got to tell me now<br><span class="tooltip"><span class="tooltiptext">늦다; To be late (time), to be overd...</span>늦기전에</span> <span class="tooltip"><span class="tooltiptext">말하다; Speak</span>말해줘</span><br><span class="tooltip"><span class="tooltiptext">이; Two</span>이</span> <span class="tooltip"><span class="tooltiptext">순간; A moment,a second; 瞬間</span>순간</span> <span class="tooltip"><span class="tooltiptext">얼마나; How many, how much ;  very</span>얼마나</span> 내가 <span class="tooltip"><span class="tooltiptext">더; More</span>더</span><br><span class="tooltip"><span class="tooltiptext">기다리다; To wait</span>기다려야</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하는지</span></p>
+<p>You Got to Tell Me Now<br>Tell me before late<br>How much more I am at this moment<br>Whether to wait</p>
+<p><br>Tic Tac Toe<br>We gon’ play game all night<br><span class="tooltip"><span class="tooltiptext">의미; meaning, purport, significance; 意味</span>의미없던</span> O and X<br><span class="tooltip"><span class="tooltiptext">정답; The right answer; 正答</span>정답은</span> <span class="tooltip"><span class="tooltiptext">이미; Already</span>이미</span> <span class="tooltip"><span class="tooltiptext">정해지다; To be determined, settled; 定해지다</span>정해져</span> <span class="tooltip"><span class="tooltiptext">있다; To be</span>있는걸</span></p>
+<p>TIC TAC TOE<br>We Gon ’Play Game All Night<br>O and X<br>The correct answer is already set</p>
+<p><br>(With you)<br><span class="tooltip"><span class="tooltiptext">하나; 하나마나</span>하나씩</span> <span class="tooltip"><span class="tooltiptext">알다; To know</span>알게된</span><br><span class="tooltip"><span class="tooltiptext">마지막; Last, final</span>마지막</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지</span> <span class="tooltip"><span class="tooltiptext">결말; conclusion, ending, finality, ...; 結末</span>결말을</span> <span class="tooltip"><span class="tooltiptext">따르다; accompany, go with, follow som...</span>따라</span><br><span class="tooltip"><span class="tooltiptext">달려가다; to run, rush, dash forward</span>달려갔던</span> <span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span></p>
+<p>(With you)<br>I learned one by one<br>Follow the last page ending<br>You and me now</p>
+<p><br>Ooh I write it down<br>this miracle<br>for you and I<br>No matter what they say now</p>
+<p>OOH I Write It Down<br>this Miracle<br>for you and i<br>No Matter What the Say Now</p>
+<p><br><span class="tooltip"><span class="tooltiptext">만나다; Meet</span>만나게</span> <span class="tooltip"><span class="tooltiptext">되다; to become, to come to be</span>되는</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span><br>Tic Tac Toe<br>Tic Tac Toe<br>Tic Tac Toe</p>
+<p>You and I<br>TIC TAC TOE<br>TIC TAC TOE<br>TIC TAC TOE</p>
+<p><br>We play this game all night<br>Tic Tac Toe<br>Tic Tac Toe<br><span class="tooltip"><span class="tooltiptext">기억; A memory; 記憶</span>기억</span> <span class="tooltip"><span class="tooltiptext">속; belong to, be affiliated with; 屬</span>속</span> <span class="tooltip"><span class="tooltiptext">한; One, a single</span>한</span> <span class="tooltip"><span class="tooltiptext">구석; 1) a corner  2) an out of the ...</span>구석</span></p>
+<p>We play this game all night<br>TIC TAC TOE<br>TIC TAC TOE<br>Memory corner</p>
+<p><br>또렷이 <span class="tooltip"><span class="tooltiptext">빛나다; to shine,glitter; to give off ...</span>빛나는</span> <span class="tooltip"><span class="tooltiptext">널; paddle board</span>널</span><br><span class="tooltip"><span class="tooltiptext">오늘; Today</span>오늘의</span> 내가 따라잡는 <span class="tooltip"><span class="tooltiptext">중; in the middle of doing</span>중이야</span><br><span class="tooltip"><span class="tooltiptext">결과; Result; 結果</span>결과</span> <span class="tooltip"><span class="tooltiptext">속; belong to, be affiliated with; 屬</span>속</span> <span class="tooltip"><span class="tooltiptext">흥망; fluctuation, vicissitude, up-a...; 興亡</span>흥망에</span><br><span class="tooltip"><span class="tooltiptext">상관없이; Without anything to do with; 相關없이</span>상관없이</span> <span class="tooltip"><span class="tooltiptext">그저; 1) still or  all the time  2) ...</span>그저</span> <span class="tooltip"><span class="tooltiptext">끌리다; To be drawn or  pulled or  dra...</span>끌리는대로</span></p>
+<p>Clear<br>I’m catching up today<br>In the rise and fall in the result<br>Regardless of whether it is attracted</p>
+<p><br><span class="tooltip"><span class="tooltiptext">달려가다; to run, rush, dash forward</span>달려갔던</span> <span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span><br><span class="tooltip"><span class="tooltiptext">풀리다; To come loose</span>풀릴</span> <span class="tooltip"><span class="tooltiptext">듯; To be like something</span>듯</span> <span class="tooltip"><span class="tooltiptext">풀리다; To come loose</span>풀리지</span> <span class="tooltip"><span class="tooltiptext">않다; To not be, to not do</span>않던</span> <span class="tooltip"><span class="tooltiptext">매듭; a knot, a node, a tie</span>매듭</span> <span class="tooltip"><span class="tooltiptext">속; belong to, be affiliated with; 屬</span>속에서</span><br><span class="tooltip"><span class="tooltiptext">점점; More and more, by degrees; 漸漸</span>점점</span> <span class="tooltip"><span class="tooltiptext">더; More</span>더</span> <span class="tooltip"><span class="tooltiptext">커지다; To become bigger</span>커져간</span> <span class="tooltip"><span class="tooltiptext">질문; A question, a query; 質問</span>질문</span> <span class="tooltip"><span class="tooltiptext">사이; space between 2 points; the re...</span>사이</span><br><span class="tooltip"><span class="tooltiptext">하나; 하나마나</span>하나씩</span> <span class="tooltip"><span class="tooltiptext">알다; To know</span>알게된</span></p>
+<p>You and me now<br>In the knot that didn’t seem to be released<br>Between questions that have grown bigger<br>I learned one by one</p>
+<p><br><span class="tooltip"><span class="tooltiptext">마지막; Last, final</span>마지막</span> <span class="tooltip"><span class="tooltiptext">페이지; page</span>페이지</span> <span class="tooltip"><span class="tooltiptext">결말; conclusion, ending, finality, ...; 結末</span>결말을</span> <span class="tooltip"><span class="tooltiptext">따르다; accompany, go with, follow som...</span>따라</span><br><span class="tooltip"><span class="tooltiptext">달려가다; to run, rush, dash forward</span>달려갔던</span> <span class="tooltip"><span class="tooltiptext">지금; Now; 只今</span>지금</span> 너와 <span class="tooltip"><span class="tooltiptext">나; Me</span>나</span><br>(Oh-Oh-Oh-Oh)<br>(Oh-Oh-Oh-Oh)</p>
+<p>(Oh-Oh-Oh-Oh)<br><span class="tooltip"><span class="tooltiptext">결국; After all or  in the end; 結局</span>결국</span> <span class="tooltip"><span class="tooltiptext">나다; after ..., used in sentences s...</span>나여야만</span> <span class="tooltip"><span class="tooltiptext">하다; To do</span>하는</span> <span class="tooltip"><span class="tooltiptext">널다; dry</span>너</span><br>(Oh-Oh-Oh-Oh)<br>(Oh-Oh-Oh-Oh)</p>
+<p>(Oh-Oh-Oh-Oh)<br>Tic Tac Toe<br>Tic Tac Toe<br>Tic Tac Toe</p>
+<p>Follow the last page ending<br>You and me now<br>(Oh-oh-oh-oh)<br>(Oh-oh-oh-oh)</p>
+<p>(Oh-oh-oh-oh)<br>After all, you must be me<br>(Oh-oh-oh-oh)<br>(Oh-oh-oh-oh)</p>
+<p>(Oh-oh-oh-oh)<br>TIC TAC TOE<br>TIC TAC TOE<br>TIC TAC TOE</p>
+<p><br>We play this game all night<br>That Tic! Tac! Toe!<br></p><table><tr><th>단어</th><th>의미</th><th>漢字</th><th>빈도</th></tr>
+<tr><td>되다</td><td>to become, to come to be</td><td>None</td><td>7</td></tr>
+<tr><td>나다</td><td>after ..., used in sentences similar to how 면 is used, but the meaning is narrower, meaning only "after .... doing the prior thing ..."</td><td>None</td><td>7</td></tr>
+<tr><td>지금</td><td>Now</td><td>只今</td><td>5</td></tr>
+<tr><td>나</td><td>Me</td><td>None</td><td>5</td></tr>
+<tr><td>것</td><td>A thing or  an object</td><td>None</td><td>4</td></tr>
+<tr><td>달려가다</td><td>to run, rush, dash forward</td><td>None</td><td>4</td></tr>
+<tr><td>내다</td><td>to see through, to make it through sth</td><td>None</td><td>3</td></tr>
+<tr><td>더</td><td>More</td><td>None</td><td>3</td></tr>
+<tr><td>하나</td><td>하나마나</td><td>None</td><td>3</td></tr>
+<tr><td>알다</td><td>To know</td><td>None</td><td>3</td></tr>
+<tr><td>마지막</td><td>Last, final</td><td>None</td><td>3</td></tr>
+<tr><td>페이지</td><td>page</td><td>None</td><td>3</td></tr>
+<tr><td>결말</td><td>conclusion, ending, finality, settlement</td><td>結末</td><td>3</td></tr>
+<tr><td>따르다</td><td>accompany, go with, follow somebody</td><td>None</td><td>3</td></tr>
+<tr><td>속</td><td>belong to, be affiliated with</td><td>屬</td><td>3</td></tr>
+<tr><td>탁</td><td>(1) With a bang, with a snap (2) widely</td><td>None</td><td>2</td></tr>
+<tr><td>한</td><td>One, a single</td><td>None</td><td>2</td></tr>
+<tr><td>늦다</td><td>To be late (time), to be overdue</td><td>None</td><td>2</td></tr>
+<tr><td>전</td><td>Before</td><td>None</td><td>2</td></tr>
+<tr><td>말하다</td><td>Speak</td><td>None</td><td>2</td></tr>
+<tr><td>주다</td><td>To give, to do for a person</td><td>None</td><td>2</td></tr>
+<tr><td>이</td><td>Two</td><td>None</td><td>2</td></tr>
+<tr><td>순간</td><td>A moment,a second</td><td>瞬間</td><td>2</td></tr>
+<tr><td>얼마나</td><td>How many, how much ;  very</td><td>None</td><td>2</td></tr>
+<tr><td>기다리다</td><td>To wait</td><td>None</td><td>2</td></tr>
+<tr><td>하다</td><td>To do</td><td>None</td><td>2</td></tr>
+<tr><td>의미</td><td>meaning, purport, significance</td><td>意味</td><td>2</td></tr>
+<tr><td>없다</td><td>Do not exist, absent</td><td>None</td><td>2</td></tr>
+<tr><td>정답</td><td>The right answer</td><td>正答</td><td>2</td></tr>
+<tr><td>이미</td><td>Already</td><td>None</td><td>2</td></tr>
+<tr><td>정해지다</td><td>To be determined, settled</td><td>定해지다</td><td>2</td></tr>
+<tr><td>있다</td><td>To be</td><td>None</td><td>2</td></tr>
+<tr><td>만나다</td><td>Meet</td><td>None</td><td>2</td></tr>
+<tr><td>넣다</td><td>to put/pour/set/insert/thrust/pack/stuff into; to allow or admit in; to count among; to use (a person) as a mediator</td><td>None</td><td>2</td></tr>
+<tr><td>풀리다</td><td>To come loose</td><td>None</td><td>2</td></tr>
+<tr><td>다시</td><td>Again</td><td>None</td><td>1</td></tr>
+<tr><td>번</td><td>Number, how many times</td><td>None</td><td>1</td></tr>
+<tr><td>끊임없이</td><td>Constantly or unceasingly</td><td>None</td><td>1</td></tr>
+<tr><td>잇다</td><td>Join, connect</td><td>None</td><td>1</td></tr>
+<tr><td>나가다</td><td>To go out</td><td>None</td><td>1</td></tr>
+<tr><td>다음</td><td>Next</td><td>None</td><td>1</td></tr>
+<tr><td>이다</td><td>to be (for persistent states)</td><td>None</td><td>1</td></tr>
+<tr><td>마치</td><td>As though, as if</td><td>None</td><td>1</td></tr>
+<tr><td>롤러</td><td>roller</td><td>None</td><td>1</td></tr>
+<tr><td>코스터</td><td>a coaster</td><td>None</td><td>1</td></tr>
+<tr><td>아</td><td>a child, a baby</td><td>None</td><td>1</td></tr>
+<tr><td>타다</td><td>to become dried up</td><td>None</td><td>1</td></tr>
+<tr><td>뫼</td><td>a mountain</td><td>None</td><td>1</td></tr>
+<tr><td>비</td><td>a ratio</td><td>None</td><td>1</td></tr>
+<tr><td>위</td><td>The stomach</td><td>None</td><td>1</td></tr>
+<tr><td>느껴지다</td><td>Feel</td><td>None</td><td>1</td></tr>
+<tr><td>혼자</td><td>Alone</td><td>None</td><td>1</td></tr>
+<tr><td>너</td><td>You</td><td>None</td><td>1</td></tr>
+<tr><td>같다</td><td>To be similar</td><td>None</td><td>1</td></tr>
+<tr><td>지우다</td><td>Put a thing on a person's back</td><td>None</td><td>1</td></tr>
+<tr><td>그림자</td><td>A shadow or  a sillheoute or  an image</td><td>None</td><td>1</td></tr>
+<tr><td>비우다</td><td>empty,vacate</td><td>None</td><td>1</td></tr>
+<tr><td>배경</td><td>Background</td><td>背景</td><td>1</td></tr>
+<tr><td>다</td><td>All, everything</td><td>None</td><td>1</td></tr>
+<tr><td>이제</td><td>Now</td><td>None</td><td>1</td></tr>
+<tr><td>그리다</td><td>Picture or  draw a picture</td><td>None</td><td>1</td></tr>
+<tr><td>물음표</td><td>interrogation mark</td><td>None</td><td>1</td></tr>
+<tr><td>가리다</td><td>being potty-trained</td><td>None</td><td>1</td></tr>
+<tr><td>느낌표</td><td>exclamation mark</td><td>None</td><td>1</td></tr>
+<tr><td>채우다</td><td>to carry (a pager) on the hip</td><td>None</td><td>1</td></tr>
+<tr><td>네</td><td>Your</td><td>None</td><td>1</td></tr>
+<tr><td>똑같다</td><td>to be the same</td><td>None</td><td>1</td></tr>
+<tr><td>모습</td><td>shape,body</td><td>None</td><td>1</td></tr>
+<tr><td>단지</td><td>an earthenware pot</td><td>None</td><td>1</td></tr>
+<tr><td>정반대</td><td>Direct opposition, the exact reverse</td><td>正反對</td><td>1</td></tr>
+<tr><td>공존</td><td>concomitance, -tancy</td><td>共存</td><td>1</td></tr>
+<tr><td>기억</td><td>A memory</td><td>記憶</td><td>1</td></tr>
+<tr><td>구석</td><td>1) a corner  2) an out of the way place</td><td>None</td><td>1</td></tr>
+<tr><td>빛나다</td><td>to shine,glitter; to give off light somehow</td><td>None</td><td>1</td></tr>
+<tr><td>널</td><td>paddle board</td><td>None</td><td>1</td></tr>
+<tr><td>오늘</td><td>Today</td><td>None</td><td>1</td></tr>
+<tr><td>중이</td><td>middle ear</td><td>None</td><td>1</td></tr>
+<tr><td>결과</td><td>Result</td><td>結果</td><td>1</td></tr>
+<tr><td>흥망</td><td>fluctuation, vicissitude, up-and-downs of a country or people</td><td>興亡</td><td>1</td></tr>
+<tr><td>상관없이</td><td>Without anything to do with</td><td>相關없이</td><td>1</td></tr>
+<tr><td>그저</td><td>1) still or  all the time  2) easily or  with no effort</td><td>None</td><td>1</td></tr>
+<tr><td>끌리다</td><td>To be drawn or  pulled or  dragged</td><td>None</td><td>1</td></tr>
+<tr><td>대</td><td>being absolutely huge</td><td>None</td><td>1</td></tr>
+<tr><td>듯</td><td>To be like something</td><td>None</td><td>1</td></tr>
+<tr><td>않다</td><td>To not be, to not do</td><td>None</td><td>1</td></tr>
+<tr><td>매듭</td><td>a knot, a node, a tie</td><td>None</td><td>1</td></tr>
+<tr><td>점점</td><td>More and more, by degrees</td><td>漸漸</td><td>1</td></tr>
+<tr><td>커지다</td><td>To become bigger</td><td>None</td><td>1</td></tr>
+<tr><td>갈다</td><td>1) sharpen  (a blade) 2) rub or  chafe 3) make juice in a mixer</td><td>None</td><td>1</td></tr>
+<tr><td>질문</td><td>A question, a query</td><td>質問</td><td>1</td></tr>
+<tr><td>사이</td><td>space between 2 points; the relationship between 2 people</td><td>None</td><td>1</td></tr>
+<tr><td>결국</td><td>After all or  in the end</td><td>結局</td><td>1</td></tr>
+<tr><td>여야</td><td>both government parties in power and the opposition</td><td>與野</td><td>1</td></tr>
+<tr><td>하</td><td>Below, underneath</td><td>None</td><td>1</td></tr>
+<tr><td>널다</td><td>dry</td><td>None</td><td>1</td></tr>
+</table>
+</body>
+</html>
